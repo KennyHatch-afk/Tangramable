@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(CircleCollider2D))]
 
-public class Movement : MonoBehaviour
+public class Movement : MonoBehaviour, IDragHandler
 {
     public Camera mainCam;
     public Vector3 circleDistance;
@@ -16,15 +17,9 @@ public class Movement : MonoBehaviour
         circleDistance = transform.position - transform.parent.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnDrag(PointerEventData eventData)
     {
-        
-    }
-
-    void OnMouseDrag()
-    {
-        Vector3 worldMousePosition = mainCam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1));
+        Vector3 worldMousePosition = mainCam.ScreenToWorldPoint(new Vector3(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue(), 1));
 
         worldMousePosition.z = transform.parent.position.z;
 
