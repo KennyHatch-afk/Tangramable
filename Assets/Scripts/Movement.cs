@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CircleCollider2D))]
 
@@ -23,7 +24,7 @@ public class Movement : MonoBehaviour
 
     void OnMouseDrag()
     {
-        Vector3 worldMousePosition = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 worldMousePosition = mainCam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1));
 
         worldMousePosition.z = transform.parent.position.z;
 

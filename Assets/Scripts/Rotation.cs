@@ -16,7 +16,7 @@ public class Rotation : MonoBehaviour
 
     void OnMouseDrag()
     {
-        Vector3 worldMousePosition = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 worldMousePosition = mainCam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1));
 
         unitCircleVector = transform.position - transform.parent.position;
         unitCircleVector.z = 0;
