@@ -14,12 +14,6 @@ public class Rotation : MonoBehaviour
         mainCam = Camera.main;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnMouseDrag()
     {
         Vector3 worldMousePosition = mainCam.ScreenToWorldPoint(Input.mousePosition);
