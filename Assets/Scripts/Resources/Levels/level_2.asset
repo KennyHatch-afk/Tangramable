@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c832ac5c30a8af440b2e94b0f2abdebd, type: 3}
   m_Name: level_2
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  positionSolution: []
-  rotationSolution: []
+  positionSolution:
+  - {x: 10, y: 0}
+  rotationSolution:
+  - 100
