@@ -14,6 +14,8 @@ public class Piece : MonoBehaviour
 
     public bool correctSpot = false;
 
+    public int id;
+
     void Start(){ }
 
     void Update()
@@ -28,6 +30,12 @@ public class Piece : MonoBehaviour
 
         return positionDifference <= positionTolerance && angleDifference <= angleTolerance;
 
+    }
+
+    public void SetTarget(Vector2 pos, float rot)
+    {
+        targetAngle = rot;
+        targetPosition = pos;
     }
 
 }
