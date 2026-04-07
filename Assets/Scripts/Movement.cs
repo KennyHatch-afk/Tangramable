@@ -15,13 +15,15 @@ public class Movement : MonoBehaviour, IDragHandler
         mainCam = Camera.main;
 
         circleDistance = transform.position - transform.parent.position;
+
+        circleDistance.z = 0;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Vector3 worldMousePosition = mainCam.ScreenToWorldPoint(new Vector3(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue(), 1));
 
-        worldMousePosition.z = transform.parent.position.z;
+        worldMousePosition.z = 0;
 
         transform.parent.position = worldMousePosition - circleDistance;
     }

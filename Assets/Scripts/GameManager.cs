@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.VersionControl;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,10 +13,13 @@ public class GameManager : MonoBehaviour
 
     public bool gameWon = false;
 
+    public GameObject levelText;
+
     void Start()
     {
         currentPieces = new List<Piece>(FindObjectsByType<Piece>(FindObjectsSortMode.None));
         LoadLevel("level_1");
+        levelText.GetComponent<TextMeshProUGUI>().text = "Level 1: " + currentLevel.levelName;
     }
 
     void Update()

@@ -6,5 +6,5 @@ public class LevelData : ScriptableObject
 {
     public List<Vector2> positionSolution;
     public List<float> rotationSolution;
-
+    public string levelName;
 }
