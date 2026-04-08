@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         currentLevel = Resources.Load<LevelData>("Levels/" + levelName);
         gameWon = false;
         SetSolutions();
-        Debug.Log(currentLevel);
+        //Debug.Log(currentLevel);
     }
 
     public void SetSolutions()
