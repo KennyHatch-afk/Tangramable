@@ -3105,7 +3105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3947588902370288157, guid: 1a926a985f1afde4ba035abdc575c12f, type: 3}
       propertyPath: m_Name
-      value: Germany_Puzzle
+      value: Level_7
       objectReference: {fileID: 0}
     - target: {fileID: 6148426340513072892, guid: 1a926a985f1afde4ba035abdc575c12f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3731,7 +3731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7515732512472202892, guid: 229219e5ee22e8d42a630617421a63f7, type: 3}
       propertyPath: m_Name
-      value: Cyprus_Puzzle
+      value: Level_6
       objectReference: {fileID: 0}
     - target: {fileID: 8090649223537190572, guid: 229219e5ee22e8d42a630617421a63f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3939,7 +3939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3947588902370288157, guid: 1a926a985f1afde4ba035abdc575c12f, type: 3}
       propertyPath: m_Name
-      value: Italy_Puzzle
+      value: Level_4
       objectReference: {fileID: 0}
     - target: {fileID: 6148426340513072892, guid: 1a926a985f1afde4ba035abdc575c12f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4686,7 +4686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 932806075451457122, guid: c9604527e35a89f4aa184937098c43f5, type: 3}
       propertyPath: m_Name
-      value: Pieces_1_Workable
+      value: Level_8
       objectReference: {fileID: 0}
     - target: {fileID: 1528178077055723635, guid: c9604527e35a89f4aa184937098c43f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5624,7 +5624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 932806075451457122, guid: c9604527e35a89f4aa184937098c43f5, type: 3}
       propertyPath: m_Name
-      value: USA_Puzzle
+      value: Level_1
       objectReference: {fileID: 0}
     - target: {fileID: 1528178077055723635, guid: c9604527e35a89f4aa184937098c43f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6036,7 +6036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3947588902370288157, guid: 1a926a985f1afde4ba035abdc575c12f, type: 3}
       propertyPath: m_Name
-      value: UK_Puzzle
+      value: Level_3
       objectReference: {fileID: 0}
     - target: {fileID: 6148426340513072892, guid: 1a926a985f1afde4ba035abdc575c12f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7322,7 +7322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7515732512472202892, guid: 229219e5ee22e8d42a630617421a63f7, type: 3}
       propertyPath: m_Name
-      value: Brazil_Puzzle
+      value: Level_2
       objectReference: {fileID: 0}
     - target: {fileID: 8090649223537190572, guid: 229219e5ee22e8d42a630617421a63f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8493,7 +8493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7515732512472202892, guid: 229219e5ee22e8d42a630617421a63f7, type: 3}
       propertyPath: m_Name
-      value: China_Puzzle
+      value: Level_5
       objectReference: {fileID: 0}
     - target: {fileID: 8090649223537190572, guid: 229219e5ee22e8d42a630617421a63f7, type: 3}
       propertyPath: m_LocalPosition.x
