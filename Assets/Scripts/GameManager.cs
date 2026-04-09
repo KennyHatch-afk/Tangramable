@@ -3,11 +3,13 @@ using TMPro;
 using UnityEditor.VersionControl;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
     public LevelData currentLevel;
+    private int counter;
 
     public List<Piece> currentPieces;
 
@@ -17,8 +19,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        counter++;
         currentPieces = new List<Piece>(FindObjectsByType<Piece>(FindObjectsSortMode.None));
-        LoadLevel("level_1");
+        LoadLevel("level_" + counter);
         levelText.GetComponent<TextMeshProUGUI>().text = "Level 1: " + currentLevel.levelName;
     }
 
@@ -27,7 +30,8 @@ public class GameManager : MonoBehaviour
         gameWon = CheckForWin();
         if(gameWon)
         {
-            LoadLevel("level_2");
+            counter++;
+            LoadLevel("level_" + counter);
         }
     }
 
