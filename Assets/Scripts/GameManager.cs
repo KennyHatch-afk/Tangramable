@@ -61,6 +61,8 @@ public class GameManager : MonoBehaviour
 
         foreach (Piece piece in currentPieces)
         {
+            if(piece == null) continue;
+
             if (piece.isCorrect())
             {
                 numCorrect++;
@@ -75,26 +77,25 @@ public class GameManager : MonoBehaviour
         currentLevelData = Resources.Load<LevelData>("Levels/" + levelName);
         gameWon = false;
         SpawnPieces();
+        SpawnSihlouette();
         FindPieces();
         SetSolutions();
-        SpawnSihlouette();
         //Debug.Log(currentLevel);
     }
 
     public void FindPieces()
     {
-        currentPieces = new List<Piece>(FindObjectsByType<Piece>(FindObjectsSortMode.None));
+        currentPieces = new List<Piece>(currentLevel.GetComponentsInChildren<Piece>());
     }
 
-public void SpawnPieces()
-{
-    if (currentLevel != null)
+    public void SpawnPieces()
     {
-        Destroy(currentLevel);
+        if (currentLevel != null)
+        {
+            Destroy(currentLevel); 
+        }
+        currentLevel = Instantiate(levelPrefabs["Level_" + counter]);
     }
-
-    currentLevel = Instantiate(levelPrefabs["Level_" + counter]);
-}
 
     public void SetSolutions()
     {
