@@ -9,7 +9,7 @@ public class Piece : MonoBehaviour
     [SerializeField]
     float targetAngle;
 
-    private float positionTolerance = 0.5f;
+    private float positionTolerance = 1f;
     private float angleTolerance = 5f;
 
     public bool correctSpot = false;
@@ -25,11 +25,10 @@ public class Piece : MonoBehaviour
 
     public bool isCorrect()
     {
-        float positionDifference = Vector2.Distance(transform.position, targetPosition);
+        float positionDifference = Vector2.Distance(transform.localPosition, targetPosition);
         float angleDifference = Mathf.Abs(Mathf.DeltaAngle(transform.eulerAngles.z, targetAngle));
 
         return positionDifference <= positionTolerance && angleDifference <= angleTolerance;
-
     }
 
     public void SetTarget(Vector2 pos, float rot)

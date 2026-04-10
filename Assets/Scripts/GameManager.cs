@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEditor.VersionControl;
@@ -8,7 +9,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
-    public LevelData currentLevel;
+    public LevelData currentLevelData;
     private int counter = 1;
 
     public List<Piece> currentPieces;
@@ -21,9 +22,12 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> prefabs = new List<GameObject>();
 
-    private Dictionary<string, GameObject> levelSihlouettes = new Dictionary<string, GameObject>();
+    private Dictionary<string, GameObject> levelSilhouettes = new Dictionary<string, GameObject>();
 
-    public List<GameObject> sihlouettes = new List<GameObject>();
+    public List<GameObject> silhouettes = new List<GameObject>();
+
+    private GameObject currentLevel;
+    private GameObject currentSilhouette;
 
     void Start()
     {
@@ -33,12 +37,12 @@ public class GameManager : MonoBehaviour
             levelPrefabs.Add(p.name, p);
         }
 
-        foreach (GameObject s in sihlouettes)
+        foreach (GameObject s in silhouettes)
         {
-            levelSihlouettes.Add(s.name, s);
+            levelSilhouettes.Add(s.name, s);
         }
         LoadLevel("level_" + counter);
-        levelText.GetComponent<TextMeshProUGUI>().text = "Level 1: " + currentLevel.levelName;
+        levelText.GetComponent<TextMeshProUGUI>().text = "Level 1: " + currentLevelData.levelName;
     }
 
     void Update()
@@ -62,14 +66,13 @@ public class GameManager : MonoBehaviour
                 numCorrect++;
             }
         }
-
         return numCorrect == currentPieces.Count;
     }
 
     public void LoadLevel(string levelName)
     {
         Debug.Log("called load level");
-        currentLevel = Resources.Load<LevelData>("Levels/" + levelName);
+        currentLevelData = Resources.Load<LevelData>("Levels/" + levelName);
         gameWon = false;
         SpawnPieces();
         FindPieces();
@@ -83,26 +86,34 @@ public class GameManager : MonoBehaviour
         currentPieces = new List<Piece>(FindObjectsByType<Piece>(FindObjectsSortMode.None));
     }
 
-    public void SpawnPieces()
+public void SpawnPieces()
+{
+    if (currentLevel != null)
     {
-        if (counter > 1)
-            Destroy(levelPrefabs["Level_" + (counter - 1)]);
-        Instantiate(levelPrefabs["Level_" + counter]);
+        Destroy(currentLevel);
     }
+
+    currentLevel = Instantiate(levelPrefabs["Level_" + counter]);
+}
 
     public void SetSolutions()
     {
         foreach (Piece p in currentPieces)
         {
-            p.SetTarget(currentLevel.positionSolution[p.id], currentLevel.rotationSolution[p.id]);
+            p.SetTarget(currentLevelData.positionSolution[p.id], currentLevelData.rotationSolution[p.id]);
         }
     }
 
     public void SpawnSihlouette()
     {
-        if (counter > 1)
-            Destroy(levelSihlouettes["level_" + (counter - 1) + "_Soln"]);
-        Instantiate(levelSihlouettes["level_" + counter + "_Soln"]);
+        if (currentSilhouette != null)
+        {
+            Destroy(currentSilhouette);
+        }
+
+        currentSilhouette = Instantiate(
+            levelSilhouettes["level_" + counter + "_Soln"]
+        );
     }
 
 }
