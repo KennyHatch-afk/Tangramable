@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c832ac5c30a8af440b2e94b0f2abdebd, type: 3}
+  m_Name: level_14
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  positionSolution:
+  - {x: 9.85, y: 0.89}
+  - {x: 9.47, y: -1.12}
+  - {x: 6.52, y: -1.8}
+  - {x: 7.195432, y: -0.1601698}
+  - {x: 6.76, y: 0.13}
+  - {x: 9.63, y: 2.19}
+  - {x: 6.05182, y: 2.814818}
+  rotationSolution:
+  - 174.298
+  - 83.491
+  - 172.396
+  - 172.396
+  - 172.396
+  - -276.239
+  - -97.515
+  levelName: Spain
