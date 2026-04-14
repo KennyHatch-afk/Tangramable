@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c832ac5c30a8af440b2e94b0f2abdebd, type: 3}
+  m_Name: level_13
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  positionSolution:
+  - {x: 5.49, y: 1.45}
+  - {x: 6.22, y: -1.6}
+  - {x: 5.98, y: 3.74}
+  - {x: 4.11, y: 3.29}
+  - {x: 7.27, y: -3.19}
+  - {x: 4.75, y: -4.45}
+  - {x: 6.38, y: 1}
+  rotationSolution:
+  - 156.429
+  - 6.353
+  - 90
+  - -28.375
+  - 294.467
+  - 23.202
+  - -173.624
+  levelName: Finland
