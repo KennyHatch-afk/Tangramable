@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: level_1
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   positionSolution:
-  - {x: 5.54, y: -2.99}
-  - {x: 7.12, y: -0.71}
-  - {x: 9.2, y: 1.1}
-  - {x: 3.68, y: -5.14}
-  - {x: 6.93, y: 3.07}
+  - {x: 10.45, y: -1.78}
+  - {x: 12.09, y: 0.506}
+  - {x: 14.13, y: 2.35}
+  - {x: 8.6, y: -3.95}
+  - {x: 11.93, y: 4.27}
   rotationSolution:
   - -48.531
   - 129.79
