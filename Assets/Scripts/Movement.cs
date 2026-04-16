@@ -10,10 +10,13 @@ public class Movement : MonoBehaviour, IDragHandler, IBeginDragHandler
 {
     public Camera mainCam;
     public Vector3 circleDistance;
+    public PieceDistance pieceTracker;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        pieceTracker = GameObject.FindGameObjectWithTag("PT").GetComponent<PieceDistance>();
+
         mainCam = Camera.main;
 
         circleDistance = transform.position - transform.parent.position;
@@ -32,6 +35,6 @@ public class Movement : MonoBehaviour, IDragHandler, IBeginDragHandler
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        transform.parent.Translate(0, 0, -0.2f);
+        transform.parent.Translate(0, 0, pieceTracker.UpdateDistance());
     }
 }
