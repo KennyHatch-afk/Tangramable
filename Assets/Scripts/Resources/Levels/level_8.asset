@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: level_8
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   positionSolution:
-  - {x: 5.3, y: -1.05}
-  - {x: 4.69, y: -4.15}
-  - {x: 3.56, y: 1.65}
-  - {x: 5.56, y: 1.57}
-  - {x: 6.79, y: 4.39}
-  - {x: 3.42, y: -3.23}
-  - {x: 3.6, y: -0.93}
-  - {x: 3.640725, y: -0.9181057}
+  - {x: 10.62, y: -1.14}
+  - {x: 9.92, y: -4.3}
+  - {x: 8.8, y: 1.51}
+  - {x: 10.84, y: 1.44}
+  - {x: 12.03, y: 4.23}
+  - {x: 8.68, y: -3.43}
+  - {x: 8.87, y: -1.13}
+  - {x: 8.94, y: -1.11}
   rotationSolution:
   - 165.985
   - -127.79
