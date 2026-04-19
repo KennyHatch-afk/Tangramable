@@ -95,6 +95,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(currentLevel);
         }
+
         currentLevel = Instantiate(levelPrefabs["Level_" + counter]);
     }
 
