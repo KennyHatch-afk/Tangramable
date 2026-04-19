@@ -21,6 +21,7 @@ public class Piece : MonoBehaviour
     void Update()
     {
         correctSpot = isCorrect();
+        if(correctSpot) SnapToTarget();
     }
 
     public bool isCorrect()
@@ -35,6 +36,12 @@ public class Piece : MonoBehaviour
     {
         targetAngle = rot;
         targetPosition = pos;
+    }
+
+    public void SnapToTarget()
+    {
+        transform.localPosition = new Vector3(targetPosition.x, targetPosition.y, transform.localPosition.z);
+        transform.localRotation = Quaternion.Euler(0, 0, targetAngle);
     }
 
 }

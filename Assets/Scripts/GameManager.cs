@@ -44,7 +44,10 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        gameWon = CheckForWin();
+        if (!Mouse.current.leftButton.isPressed)
+        {
+            gameWon = CheckForWin();
+        }
         if (gameWon)
         {
             counter++;
