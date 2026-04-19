@@ -40,7 +40,6 @@ public class GameManager : MonoBehaviour
             levelSilhouettes.Add(s.name, s);
         }
         LoadLevel("level_" + counter);
-        levelText.GetComponent<TextMeshProUGUI>().text = "Level 1: " + currentLevelData.levelName;
     }
 
     void Update()
@@ -59,7 +58,7 @@ public class GameManager : MonoBehaviour
 
         foreach (Piece piece in currentPieces)
         {
-            if(piece == null) continue;
+            if (piece == null) continue;
 
             if (piece.isCorrect())
             {
@@ -78,6 +77,7 @@ public class GameManager : MonoBehaviour
         SpawnSihlouette();
         FindPieces();
         SetSolutions();
+        levelText.GetComponent<TextMeshProUGUI>().text = "Level " + counter + ": " + currentLevelData.levelName;
         //Debug.Log(currentLevel);
     }
 
@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
     {
         if (currentLevel != null)
         {
-            Destroy(currentLevel); 
+            Destroy(currentLevel);
         }
         currentLevel = Instantiate(levelPrefabs["Level_" + counter]);
     }
