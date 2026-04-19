@@ -9,7 +9,7 @@ public class Piece : MonoBehaviour
     [SerializeField]
     float targetAngle;
 
-    private float positionTolerance = 1f;
+    private float positionTolerance = 0.3f;
     private float angleTolerance = 5f;
 
     public bool correctSpot = false;
