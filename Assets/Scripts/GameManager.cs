@@ -116,6 +116,7 @@ public class GameManager : MonoBehaviour
         currentSilhouette = Instantiate(
             levelSilhouettes["level_" + counter + "_Soln"]
         );
+        currentSilhouette.transform.position = new Vector3(currentSilhouette.transform.position.x, currentSilhouette.transform.position.y, 1f);
     }
 
 }

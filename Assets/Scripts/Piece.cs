@@ -40,7 +40,7 @@ public class Piece : MonoBehaviour
 
     public void SnapToTarget()
     {
-        transform.localPosition = new Vector3(targetPosition.x, targetPosition.y, transform.localPosition.z);
+        transform.localPosition = new Vector3(targetPosition.x, targetPosition.y, -1f);
         transform.localRotation = Quaternion.Euler(0, 0, targetAngle);
     }
 

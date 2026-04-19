@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 [RequireComponent(typeof(CircleCollider2D))]
 
-public class Movement : MonoBehaviour, IDragHandler, IBeginDragHandler
+public class Movement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     public Camera mainCam;
     public Vector3 circleDistance;
@@ -31,10 +31,17 @@ public class Movement : MonoBehaviour, IDragHandler, IBeginDragHandler
         worldMousePosition.z = transform.position.z;
 
         transform.parent.position = worldMousePosition - circleDistance;
+        //transform.parent.position = new Vector3(transform.parent.position.x, transform.parent.position.y, -1f);
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        transform.parent.Translate(0, 0, pieceTracker.UpdateDistance());
+        transform.parent.Translate(0, 0, -1f);
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        Debug.Log("end drag");
+        transform.parent.position = new Vector3(transform.parent.position.x, transform.parent.position.y, 0f);
     }
 }
