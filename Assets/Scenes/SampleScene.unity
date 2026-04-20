@@ -889,6 +889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82536bae3c655924296549f20f623e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  isAdmin: 0
   currentLevelData: {fileID: 0}
   currentPieces: []
   gameWon: 0
@@ -1278,7 +1279,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: click
-    clip: {fileID: 8300000, guid: 35ec6a31b5e9eca4887564571f8f30f1, type: 3}
+    clip: {fileID: 8300000, guid: 1ea5cf37e2c17974e8869eac1aa22373, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -1288,6 +1289,12 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: background
+    clip: {fileID: 8300000, guid: 932554d651e54c74fa2c44a70411af2f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
 --- !u!4 &1771334669
 Transform:
