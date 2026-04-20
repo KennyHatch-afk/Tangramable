@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
         SpawnSihlouette();
         FindPieces();
         SetSolutions();
-        levelText.GetComponent<TextMeshProUGUI>().text = "Level " + counter + ": " + currentLevelData.levelName;
+        levelText.GetComponent<TextMeshProUGUI>().text = "Level " + counter + " - " + currentLevelData.levelName;
     }
 
     public void FindPieces()
