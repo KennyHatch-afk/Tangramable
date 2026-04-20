@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3682062863681995731}
   - component: {fileID: 5704089524208804565}
   m_Layer: 0
-  m_Name: Level_14_Soln
+  m_Name: level_14_Soln
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
