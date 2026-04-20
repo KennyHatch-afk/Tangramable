@@ -9,6 +9,6 @@ public class StartButton : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         menu.GetComponent<Menus>().StartGame();
-        AudioManager.Play("snap");
+        AudioManager.Play("click");
     }
 }
