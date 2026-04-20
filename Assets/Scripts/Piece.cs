@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Piece : MonoBehaviour
 {
+
     [SerializeField]
     Vector2 targetPosition;
 
@@ -10,7 +11,7 @@ public class Piece : MonoBehaviour
     float targetAngle;
 
     private float positionTolerance = 0.3f;
-    private float angleTolerance = 5f;
+    private float angleTolerance = 10f;
 
     public bool correctSpot = false;
 
@@ -22,6 +23,7 @@ public class Piece : MonoBehaviour
     {
         correctSpot = isCorrect();
         if(correctSpot) SnapToTarget();
+        else hasBeenSnapped = false;
     }
 
     public bool isCorrect()
@@ -38,8 +40,14 @@ public class Piece : MonoBehaviour
         targetPosition = pos;
     }
 
+    private bool hasBeenSnapped = false;
     public void SnapToTarget()
     {
+        if(!hasBeenSnapped)
+        {
+            AudioManager.Play("snap");
+            hasBeenSnapped = true;
+        }
         transform.localPosition = new Vector3(targetPosition.x, targetPosition.y, -1f);
         transform.localRotation = Quaternion.Euler(0, 0, targetAngle);
     }

@@ -7,6 +7,8 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
+    public bool isAdmin = false;
+
     public LevelData currentLevelData;
     private int counter = 1;
 
@@ -27,6 +29,11 @@ public class GameManager : MonoBehaviour
     private GameObject currentLevel;
     private GameObject currentSilhouette;
 
+    void Awake()
+    {
+        AudioManager.Play("background");
+    }
+
     void Start()
     {
 
@@ -44,6 +51,14 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (isAdmin && Input.GetKeyDown(KeyCode.F1))
+        {
+            counter++;
+            AudioManager.Play("level-win");
+            LoadLevel("level_" + counter);
+            return;
+        }
+
         if (!Mouse.current.leftButton.isPressed)
         {
             gameWon = CheckForWin();
@@ -51,6 +66,7 @@ public class GameManager : MonoBehaviour
         if (gameWon)
         {
             counter++;
+            AudioManager.Play("level-win");
             LoadLevel("level_" + counter);
         }
     }
