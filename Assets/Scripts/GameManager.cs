@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public List<Piece> currentPieces;
 
     public bool gameWon = false;
+    public bool gameOver = false;
 
     public GameObject levelText;
 
@@ -87,7 +88,13 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel(string levelName)
     {
-        Debug.Log("called load level");
+        if (levelPrefabs.ContainsKey("Level_" + counter) == false)
+        {
+            // game over
+            gameOver = true;
+            UIManager.instance.GameOver();
+            return;
+        }
         currentLevelData = Resources.Load<LevelData>("Levels/" + levelName);
         gameWon = false;
         SpawnPieces();
@@ -95,7 +102,6 @@ public class GameManager : MonoBehaviour
         FindPieces();
         SetSolutions();
         levelText.GetComponent<TextMeshProUGUI>().text = "Level " + counter + ": " + currentLevelData.levelName;
-        //Debug.Log(currentLevel);
     }
 
     public void FindPieces()
@@ -109,7 +115,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(currentLevel);
         }
-
         currentLevel = Instantiate(levelPrefabs["Level_" + counter]);
     }
 
@@ -132,6 +137,14 @@ public class GameManager : MonoBehaviour
             levelSilhouettes["level_" + counter + "_Soln"]
         );
         currentSilhouette.transform.position = new Vector3(currentSilhouette.transform.position.x, currentSilhouette.transform.position.y, 1f);
+    }
+
+    public void Restart()
+    {
+        AudioManager.Play("click");
+        UIManager.instance.clearScreen();
+        counter = 1;
+        LoadLevel("level_" + counter);
     }
 
 }
