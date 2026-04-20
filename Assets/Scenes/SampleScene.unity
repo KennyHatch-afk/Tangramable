@@ -223,6 +223,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &290179530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5459431560162144624, guid: f73172d992c3cc445873d1c238d36530, type: 3}
+  m_PrefabInstance: {fileID: 327157535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &327157535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1418,7 +1423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eea942decdb3b34697db3074419f6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  gameOverScreen: {fileID: 0}
+  gameOverScreen: {fileID: 290179530}
 --- !u!4 &1821176468
 Transform:
   m_ObjectHideFlags: 0
