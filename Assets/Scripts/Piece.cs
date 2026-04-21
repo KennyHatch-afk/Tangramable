@@ -5,13 +5,13 @@ public class Piece : MonoBehaviour
 {
 
     [SerializeField]
-    Vector2 targetPosition;
+    protected Vector2 targetPosition;
 
     [SerializeField]
-    float targetAngle;
+    protected float targetAngle;
 
-    private float positionTolerance = 0.3f;
-    private float angleTolerance = 10f;
+    protected float positionTolerance = 0.3f;
+    protected float angleTolerance = 10f;
 
     public bool correctSpot = false;
 
@@ -26,7 +26,7 @@ public class Piece : MonoBehaviour
         else hasBeenSnapped = false;
     }
 
-    public bool isCorrect()
+    public virtual bool isCorrect()
     {
         float positionDifference = Vector2.Distance(transform.localPosition, targetPosition);
         float angleDifference = Mathf.Abs(Mathf.DeltaAngle(transform.eulerAngles.z, targetAngle));

@@ -1706,7 +1706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3070530518856436146}
   - component: {fileID: 8526216239657972048}
-  - component: {fileID: 790541291251341318}
+  - component: {fileID: 6511314888255207421}
   m_Layer: 0
   m_Name: Tangramable_2_0
   m_TagString: Untagged
@@ -1793,7 +1793,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &790541291251341318
+--- !u!114 &6511314888255207421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1802,9 +1802,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4024675624334673956}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f334adc3acd08a4e9c5ff035afa0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fc4d1f43fa403b448f2f7f60110ab64, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Piece
+  m_EditorClassIdentifier: Assembly-CSharp::Rectangle
   targetPosition: {x: 0, y: 0}
   targetAngle: 0
   correctSpot: 0
