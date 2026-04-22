@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
@@ -5,7 +6,12 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
     
     [SerializeField]
-    private GameObject gameOverScreen;
+    private Dictionary<string, GameObject> UIPrefabs = new Dictionary<string, GameObject>();
+
+    public List<GameObject> prefabs = new List<GameObject>();
+
+    private string currentUIName;
+
 
     void Awake()
     {
@@ -18,20 +24,35 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        foreach(GameObject p in prefabs)
+        {
+            Debug.Log(p.name);
+            UIPrefabs.Add(p.name, p);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
         
     }
 
-    public void GameOver()
+    public void SetUI(string name)
     {
-        instance.gameOverScreen.SetActive(true);
+        currentUIName = name;
+        Activate();
     }
 
-    public void clearScreen()
+    private void Activate()
     {
-        gameOverScreen.SetActive(false);
+        instance.UIPrefabs[currentUIName].SetActive(true);
+    }
+
+    public void ClearScreen()
+    {
+        UIPrefabs[currentUIName].SetActive(false);
     }
 
 }

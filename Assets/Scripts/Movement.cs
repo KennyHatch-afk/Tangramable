@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     public Vector3 circleDistance;
     public PieceDistance pieceTracker;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,12 +37,21 @@ public class Movement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        Debug.Log("Begin Drag");
+        Vector3 worldMousePosition = mainCam.ScreenToWorldPoint(new Vector3(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue(), 1));
+
+        worldMousePosition.z = transform.position.z;
+
+        // Reset the circle distance
+        circleDistance = worldMousePosition - transform.parent.position;
+
+        transform.parent.position = worldMousePosition - circleDistance;
+
         transform.parent.Translate(0, 0, -1f);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("end drag");
         transform.parent.position = new Vector3(transform.parent.position.x, transform.parent.position.y, 0f);
     }
 }

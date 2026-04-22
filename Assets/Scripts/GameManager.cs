@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         AudioManager.Play("background");
+        //UIManager.instance.SetUI("StartScreen");
     }
 
     void Start()
@@ -92,7 +93,7 @@ public class GameManager : MonoBehaviour
         {
             // game over
             gameOver = true;
-            UIManager.instance.GameOver();
+            UIManager.instance.SetUI("GameOverScreen");
             return;
         }
         currentLevelData = Resources.Load<LevelData>("Levels/" + levelName);
@@ -142,7 +143,7 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         AudioManager.Play("click");
-        UIManager.instance.clearScreen();
+        UIManager.instance.ClearScreen();
         counter = 1;
         LoadLevel("level_" + counter);
     }
