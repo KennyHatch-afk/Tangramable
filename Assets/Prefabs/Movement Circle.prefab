@@ -107,6 +107,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   mainCam: {fileID: 0}
   circleDistance: {x: 0, y: 0, z: 0}
+  pieceTracker: {fileID: 0}
+  rotateLeft:
+    m_Name: Rotate Left
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 39df0504-80ef-4ab2-8883-e6281b27af5e
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: dd72e9b1-570c-4729-aed6-eee552de8e62
+      m_Path: <Keyboard>/q
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate Left
+      m_Flags: 0
+    m_Flags: 0
+  rotateRight:
+    m_Name: Rotate Right
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 24b908ba-c2ec-4036-9803-c95201ba33f3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: da9bb9a3-42be-4887-b242-af2430eac1bc
+      m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate Right
+      m_Flags: 0
+    m_Flags: 0
 --- !u!58 &8964265214781741386
 CircleCollider2D:
   m_ObjectHideFlags: 0
