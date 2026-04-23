@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c832ac5c30a8af440b2e94b0f2abdebd, type: 3}
+  m_Name: level_20
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  positionSolution:
+  - {x: 7.3, y: -2.69}
+  - {x: 8.865512, y: -1.341086}
+  - {x: 9.210241, y: 0.608572}
+  - {x: 7.84, y: -5.56}
+  - {x: 6.6, y: -5.75}
+  - {x: 9.3, y: -3.61}
+  rotationSolution:
+  - 3.348
+  - 4.59
+  - 94.032
+  - 184.432
+  - 35.176
+  - -162.489
+  levelName: Madagascar
