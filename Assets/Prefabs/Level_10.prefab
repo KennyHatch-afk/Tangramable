@@ -108,6 +108,25 @@ MonoBehaviour:
   mainCam: {fileID: 0}
   circleDistance: {x: 0, y: 0, z: 0}
   pieceTracker: {fileID: 0}
+  rotateLeft:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: e8e8fe13-7181-465e-962f-acf64ae55021
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rotateRight:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a2fe2819-8ddf-4b1e-9f77-85479103c097
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  isSelected: 0
 --- !u!58 &1179374604274242741
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -540,6 +559,25 @@ MonoBehaviour:
   mainCam: {fileID: 0}
   circleDistance: {x: 0, y: 0, z: 0}
   pieceTracker: {fileID: 0}
+  rotateLeft:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: af32d6ee-0b92-489c-8fb3-b2c27c048d79
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rotateRight:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3f56730d-6c3a-4150-a063-84459869a3d6
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  isSelected: 0
 --- !u!58 &369859851078545284
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -684,6 +722,25 @@ MonoBehaviour:
   mainCam: {fileID: 0}
   circleDistance: {x: 0, y: 0, z: 0}
   pieceTracker: {fileID: 0}
+  rotateLeft:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d3bb1970-8fd4-4045-8fff-c1442b2aa973
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rotateRight:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2d5e8c1b-52aa-4bf6-9b66-040e59077ba9
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  isSelected: 0
 --- !u!58 &3785589307141996637
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1260,6 +1317,25 @@ MonoBehaviour:
   mainCam: {fileID: 0}
   circleDistance: {x: 0, y: 0, z: 0}
   pieceTracker: {fileID: 0}
+  rotateLeft:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 926386a4-2fb3-41ae-90af-98ec0b0880f3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rotateRight:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f50b4cff-b5c6-444d-b3dd-4301af78269f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  isSelected: 0
 --- !u!58 &2721434061344249071
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1526,7 +1602,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8172607797106434914, guid: fced44ba4829e3447a5f5a8d61339719, type: 3}
+  m_Sprite: {fileID: -2061073033812042135, guid: 3467511afdb6eea48b15ecaebd6c7515, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1783,7 +1859,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6680300173023802508, guid: fced44ba4829e3447a5f5a8d61339719, type: 3}
+  m_Sprite: {fileID: 3527619886209712734, guid: 3467511afdb6eea48b15ecaebd6c7515, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1895,7 +1971,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6229530132530144523, guid: fced44ba4829e3447a5f5a8d61339719, type: 3}
+  m_Sprite: {fileID: -2576942142158947958, guid: 3467511afdb6eea48b15ecaebd6c7515, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2153,7 +2229,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 4099684619029985161, guid: fced44ba4829e3447a5f5a8d61339719, type: 3}
+  m_Sprite: {fileID: 584579736701052912, guid: 3467511afdb6eea48b15ecaebd6c7515, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2899,6 +2975,25 @@ MonoBehaviour:
   mainCam: {fileID: 0}
   circleDistance: {x: 0, y: 0, z: 0}
   pieceTracker: {fileID: 0}
+  rotateLeft:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4fd2f7f7-e72a-4158-974a-96d8243b1711
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rotateRight:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6406463b-88f0-4296-9aa9-376b4fe17873
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  isSelected: 0
 --- !u!58 &8116454609867443405
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3742,7 +3837,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9135860382092613719, guid: fced44ba4829e3447a5f5a8d61339719, type: 3}
+  m_Sprite: {fileID: -4308214624552892231, guid: 3467511afdb6eea48b15ecaebd6c7515, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
