@@ -47,6 +47,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5715346368538079146}
   - component: {fileID: 5369097001839332676}
+  - component: {fileID: 7072151305139772835}
   m_Layer: 0
   m_Name: Tangramable_1v3_5
   m_TagString: Untagged
@@ -133,6 +134,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &7072151305139772835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625554044743426475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f334adc3acd08a4e9c5ff035afa0c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Piece
+  targetPosition: {x: 0, y: 0}
+  targetAngle: 0
+  correctSpot: 0
+  id: 3
 --- !u!1 &3147670337691953560
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,6 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2383307591649130192}
   - component: {fileID: 5432559736898732497}
+  - component: {fileID: 7299276217142093660}
   m_Layer: 0
   m_Name: Tangramable_1v3_7
   m_TagString: Untagged
@@ -228,6 +246,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &7299276217142093660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3147670337691953560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f334adc3acd08a4e9c5ff035afa0c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Piece
+  targetPosition: {x: 0, y: 0}
+  targetAngle: 0
+  correctSpot: 0
+  id: 4
 --- !u!1 &3352867557671554590
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,6 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4428938570405240404}
   - component: {fileID: 2101665128459809225}
+  - component: {fileID: 4357147117161982255}
   m_Layer: 0
   m_Name: Tangramable_1v3_2
   m_TagString: Untagged
@@ -324,6 +359,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &4357147117161982255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3352867557671554590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f334adc3acd08a4e9c5ff035afa0c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Piece
+  targetPosition: {x: 0, y: 0}
+  targetAngle: 0
+  correctSpot: 0
+  id: 2
 --- !u!1 &3816697337150824518
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4780512918150530143}
   - component: {fileID: 3740554659395127119}
+  - component: {fileID: 6552207489820425678}
   m_Layer: 0
   m_Name: Tangramable_1v3_1
   m_TagString: Untagged
@@ -420,6 +472,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &6552207489820425678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3816697337150824518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f334adc3acd08a4e9c5ff035afa0c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Piece
+  targetPosition: {x: 0, y: 0}
+  targetAngle: 0
+  correctSpot: 0
+  id: 1
 --- !u!1 &5830152354385054368
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,6 +498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6553981914226889377}
   - component: {fileID: 238612725610193281}
+  - component: {fileID: 1223514594967182707}
   m_Layer: 0
   m_Name: Tangramable_1v3_8
   m_TagString: Untagged
@@ -515,6 +584,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1223514594967182707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5830152354385054368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f334adc3acd08a4e9c5ff035afa0c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Piece
+  targetPosition: {x: 0, y: 0}
+  targetAngle: 0
+  correctSpot: 0
+  id: 5
 --- !u!1 &6933988877509315154
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2087766083564194679}
   - component: {fileID: 4299656843374108515}
+  - component: {fileID: 725203803565275415}
   m_Layer: 0
   m_Name: Tangramable_1v3_0
   m_TagString: Untagged
@@ -611,6 +697,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &725203803565275415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6933988877509315154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f334adc3acd08a4e9c5ff035afa0c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Piece
+  targetPosition: {x: 0, y: 0}
+  targetAngle: 0
+  correctSpot: 0
+  id: 0
 --- !u!1001 &577376442341265753
 PrefabInstance:
   m_ObjectHideFlags: 0

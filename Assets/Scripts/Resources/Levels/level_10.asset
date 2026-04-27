@@ -13,15 +13,25 @@ MonoBehaviour:
   m_Name: level_10
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   positionSolution:
-  - {x: 1.57, y: 1.36}
-  - {x: 4.54, y: 1.98}
-  - {x: 5.71, y: -1.93}
-  - {x: 5.05, y: -1.01}
-  - {x: 2.68, y: -1.29}
+  - {x: 6.93, y: 2.03}
+  - {x: 9.36, y: -4.25}
+  - {x: 13.31, y: -2.65}
+  - {x: 10.68, y: 2.49}
+  - {x: 12.97, y: -4.46}
+  - {x: 10.09, y: 4.52}
+  - {x: 10.64, y: 0.93}
+  - {x: 12.36, y: -1.66}
+  - {x: 9.6, y: -2.09}
+  - {x: 11.46, y: -3.02}
   rotationSolution:
-  - 0
-  - 180
-  - -41.029
-  - 180
-  - 180
-  levelName: France
+  - 19
+  - -100
+  - 169
+  - -322.248
+  - 72
+  - 37.821
+  - 122.595
+  - 122
+  - -103
+  - 167
+  levelName: United Kingdom
